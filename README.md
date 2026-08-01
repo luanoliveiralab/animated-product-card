@@ -28,3 +28,10 @@ Um card de produto interativo desenvolvido utilizando HTML e CSS, com animaçõe
 - E-commerces
 - Catálogos de produtos
 - Projetos de estudo
+
+## ▶️ Como executar
+
+1. Clone este repositório.
+2. Abra o arquivo `index.html` em seu navegador.
+
+LICENSE
