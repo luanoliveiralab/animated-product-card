@@ -34,4 +34,7 @@ Um card de produto interativo desenvolvido utilizando HTML e CSS, com animaçõe
 1. Clone este repositório.
 2. Abra o arquivo `index.html` em seu navegador.
 
-LICENSE
+## 🔗 Demonstração
+
+Acesse aqui:
+https://luanoliveiralab.github.io/animated-product-card/
