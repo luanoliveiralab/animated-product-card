@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#181818;
+}
+
+.card{
+    position:relative;
+    width:520px;
+    height:260px;
+    background:#4f46e5;
+    border-radius:25px;
+    overflow:hidden;
+    cursor:pointer;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+    /* O card fica "escondido" em formato de círculo */
+    clip-path:circle(60px at center);
+
+    transition:
+        clip-path .65s ease,
+        box-shadow .35s ease;
+}
+
+.card:hover{
+    clip-path:circle(150% at center);
+    box-shadow:0 30px 60px rgba(0,0,0,.45);
+}
+
+/* ÍCONE */
+
+.icon{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:48px;
+
+    transition:
+        opacity .3s,
+        transform .3s;
+}
+
+.card:hover .icon{
+    opacity:0;
+    transform:scale(.6);
+}
+
+/* TEXTO */
+
+.content{
+    position:absolute;
+    left:40px;
+    top:50%;
+
+    width:230px;
+
+    color:#fff;
+
+    opacity:0;
+    transform:translate(-40px,-50%);
+
+    transition:
+        opacity .45s ease .2s,
+        transform .45s ease .2s;
+}
+
+.card:hover .content{
+    opacity:1;
+    transform:translate(0,-50%);
+}
+
+.content h1{
+    margin-bottom:12px;
+    font-size:30px;
+}
+
+.content p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+/* IMAGEM */
+
+.card img{
+    position:absolute;
+    right:30px;
+    bottom:0;
+
+    height:230px;
+
+    opacity:0;
+    transform:translateX(180px) rotate(-10deg);
+
+    transition:
+        transform .55s ease .15s,
+        opacity .55s ease .15s;
+}
+
+.card:hover img{
+    opacity:1;
+    transform:translateX(0) rotate(0deg);
+}
